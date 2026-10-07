@@ -1,3 +1,5 @@
+import "./css/create.css"
+
 function CreatePost(){
     return (
         <div className="create-post-container">
@@ -7,12 +9,17 @@ function CreatePost(){
                     <label htmlFor="title">제목</label>
                     <input id="title" type="text" placeholder="제목을 입력하세요"/>
                 </div>
-                <div>
-                    
+                <div className="form-group">
+                    <label htmlFor="content">내용</label>
+                    <textarea id="content" placeholder="내용을 입력하시오"></textarea>
                 </div>
+                <button type="submit" className="submit-button">등록</button>
             </form>
         </div>
 )
 }
 
 export default CreatePost
+
+//input 한줄입력, textarea는 여러줄가능
+//
